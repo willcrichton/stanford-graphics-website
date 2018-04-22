@@ -1,0 +1,50 @@
+$default-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+$header-family: 'Carter One', $default-family;
+
+$media-phone: "only screen and (max-width: 640px)";
+
+@function grey($v) {
+    @return rgb($v, $v, $v);
+}
+
+// https://css-tricks.com/snippets/sass/mixin-prefix-properties/
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+  #{$property}: $value;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+ul, ol {
+    list-style-position: outside;
+    padding-left: 25px;
+
+    li > span {
+        position: relative;
+        left: -5px;
+    }
+}
+
+$link-color: rgb(182, 64, 64);
+a {
+    text-decoration: none;
+    color: $link-color;
+    border-bottom: 1px solid transparentize($link-color, 0.8);
+
+    &:hover {
+        color: $link-color;
+        border-bottom-color: $link-color;
+    }
+}
+
+.clearfix {
+    clear: both;
+}

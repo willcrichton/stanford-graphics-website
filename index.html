@@ -1,3 +1,51 @@
 ---
 layout: default
+id: index
 ---
+
+<div class="index">
+
+  <div class="row">
+    <div class="nine columns news">
+      <h2>News</h2>
+      <ul>
+        {% for bullet in site.data.index.news %}
+        <li><span>{{ bullet }}</span></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="three columns">
+      <h2>Links</h2>
+      <ul>
+        <li><a href="#">Directions</a></li>
+        <li><a href="#">Demos</a></li>
+        <li><a href="#">Facilities</a></li>
+        <li><a href="#">Infrastructure</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="three columns people">
+      <h2>People</h2>
+      <span>Group picture goes here!</span>
+      <img src="http://lorempixel.com/200/200/nature" />
+    </div>
+    <div class="nine columns publications">
+      <h2>Publications</h2>
+      {% for conf in site.data.index.publications %}
+      <div class="conference">
+        <div class="confname">{{ conf.conference }}</div>
+        <div class="papers">
+          {% for paper in conf.papers %}
+          <div class="paper">
+            <div class="title"><a href="{{ paper.link | relative_url }}">{{ paper.title }}</a></div>
+            <div class="authors">{{ paper.authors }}</div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

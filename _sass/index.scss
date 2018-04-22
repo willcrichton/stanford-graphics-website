@@ -1,0 +1,33 @@
+@import "common.scss";
+
+.index {
+    h2 {
+        font-family: $header-family;
+        font-size: 30px;
+        margin-bottom: 1rem;
+    }
+
+    .news {
+        li {
+            margin-bottom: 5px;
+        }
+    }
+
+    .publications {
+        .conference {
+            margin-bottom: 20px;
+
+            .confname {
+                text-transform: uppercase;
+                margin-bottom: 10px;
+                font-size: 22px;
+            }
+
+            .paper {
+                .title {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

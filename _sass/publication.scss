@@ -1,0 +1,19 @@
+@import "common.scss";
+
+.publication {
+    .title {
+        margin-bottom: 2rem;
+    }
+
+    .authors {
+        margin-bottom: 2rem;
+    }
+
+    .body {
+        h1 {
+            font-size: 30px;
+            margin-bottom: 1rem;
+            margin-top: 3rem;
+        }
+    }
+}

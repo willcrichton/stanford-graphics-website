@@ -1,0 +1,37 @@
+publications:
+  - conference: SIGGRAPH 2018
+    papers:
+      - title: "Scanner: Efficient Video Analysis at Scale"
+        link: /publications/scanner
+        authors: Alex Poms, Will Crichton, Pat Hanrahan, Kayvon Fatahalian
+
+news:
+  - >-
+    <em>8/26/16</em> - Here is a version of
+          <a href="http://graphics.stanford.edu/~levoy/">Marc Levoy's</a>
+          CS 178 (Digital Photography) taught at Google,
+          including
+          <a href="http://sites.google.com/site/marclevoylectures">
+            recordings</a> of the lectures (also on
+          <a href="https://www.youtube.com/playlist?list=PL7ddpXYvFXspUN0N-gObF1GXoCA-DA-7i">YouTube</a>).
+  - >-
+    <em>7/24/16</em> -
+    <a href="http://graphics.stanford.edu/~levoy/">Marc Levoy's</a>
+    paper with Google Research on
+    <a href="http://graphics.stanford.edu/papers/hdrp/hasinoff-hdrplus-sigasia16-preprint.pdf">
+    high dynamic range and low-light imaging</a>
+    has been accepted to
+    SIGGRAPH Asia 2016.
+  - >-
+    <em>10/21/14</em> -
+    Our papers (with
+    <a href="http://www.stanford.edu/group/dlab/">Karl Deisseroth's lab</a>)
+    on
+    <a href="http://graphics.stanford.edu/papers/lfdeconvolution">
+    3D deconvolution</a>
+    and
+    <a href="http://graphics.stanford.edu/papers/lfmwavefrontcoding">wavefront
+    coding</a> for
+    <a href="http://graphics.stanford.edu/projects/lfmicroscope">
+    light field microscopy</a>
+    have appeared in Optics Express.
