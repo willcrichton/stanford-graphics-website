@@ -1,0 +1,72 @@
+$default-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+$header-family: 'Carter One', $default-family;
+
+$media-phone: "only screen and (max-width: 640px)";
+
+@function grey($v) {
+    @return rgb($v, $v, $v);
+}
+
+body {
+    font-family: $default-family;
+    font-size: 20px;
+    background: grey(250);
+}
+
+nav {
+    margin-top: 10px;
+
+    div.logo {
+        font-family: $header-family;
+        font-size: 40px;
+        text-transform: uppercase;
+        float: left;
+
+        @media #{$media-phone} {
+            float: none;
+            text-align: center;
+            font-size: 28px;
+        }
+    }
+
+    ul.navlinks {
+        float: right;
+        list-style: none;
+        margin: 0;
+
+        @media #{$media-phone} {
+            float: none;
+            text-align: center;
+        }
+
+        li {
+            display: inline-block;
+
+            a {
+                display: inline-block;
+                height: 30px;
+                margin-top: 15px;
+                margin-left: 10px;
+                vertical-align: middle;
+                background-color: grey(60);
+                padding: 3px 8px;
+                border-radius: 2px;
+                text-decoration: none;
+                color: grey(250);
+
+                &:hover {
+                    color: white;
+                }
+
+                @media #{$media-phone} {
+                    margin-top: 5px;
+                }
+
+            }
+        }
+    }
+}
+
+.clearfix {
+    clear: both;
+}
