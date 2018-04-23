@@ -2,25 +2,40 @@
 layout: publication
 title: "Scanner: Efficient Video Analysis at Scale"
 authors:
-    - Alex Poms, CMU
-    - Will Crichton, Stanford
+    - <a href="http://www.cs.cmu.edu/~apoms/">Alex Poms</a>, CMU
+    - <a href="http://willcrichton.net">Will Crichton</a>, Stanford
     - Pat Hanrahan, Stanford
-    - Kayvon Fatahalian, Stanford
+    - <a href="http://graphics.stanford.edu/~kayvonf/">Kayvon Fatahalian</a>, Stanford
 venue: |
-    ACM Transactions on Graphics, 36(4), Aug 2017
-    Proceedings of ACM SIGGRAPH 2017
+    ACM Transactions on Graphics, 36(4), Aug 2018
+    Proceedings of ACM SIGGRAPH 2018
 ---
 
-# Abstract
+![]({{ "/assets/images/publications/scanner/banner.jpg" | relative_url }})
 
-Modern game engines seek to balance the conflicting goals of high rendering performance and productive software development. To improve CPU performance, the most recent generation of real-time graphics APIs provide new primitives for performing efficient batch updates to shader parameters. However, modern game engines featuring large shader codebases have struggled to take advantage of these benefits. The problem is that even though shader parameters can be organized into efficient modules bound to the pipeline at various frequencies, modern shading languages lack corresponding primitives to organize shader logic (requiring these parameters) into modules as well. The result is that complex shaders are typically compiled to use a monolithic block of parameters, defeating the design, and performance benefits, of the new parameter binding API. In this paper we propose to resolve this mismatch by introducing shader components, a first-class unit of modularity in a shader program that encapsulates a unit of shader logic and the parameters that must be bound when that logic is in use. We show that by building sophisticated shaders out of components, we can retain essential aspects of performance (static specialization of the shader logic in use and efficient update of parameters at component granularity) while maintaining the modular shader code structure that is desirable in today's high-end game engines.
+## Abstract
 
-# Paper
+A growing number of visual computing applications depend on the analysis of large video collections.
+The challenge is that scaling applications to operate on these datasets requires
+efficient systems for pixel data access and parallel processing across large numbers of machines.
+Few programmers have the capability to operate efficiently at these scales,
+limiting the field's ability to explore new applications that leverage big video data.
+In response, we have created Scanner, a system for productive and efficient video analysis at scale.
+Scanner organizes video collections as tables in a data store optimized for sampling frames from compressed video,
+and executes pixel processing computations, expressed as dataflow graphs, on these frames.
+Scanner schedules video analysis applications expressed using these abstractions onto heterogeneous
+throughput computing hardware, such as multi-core CPUs, GPUs, and media processing ASICs, for high-throughput pixel processing.
+We demonstrate the productivity of Scanner by authoring a variety of video processing applications
+including the synthesis of stereo VR video streams from multi-camera rigs,
+markerless 3D human pose reconstruction from video,
+and data-mining big video datasets such as hundreds of feature-length films or over 70,000 hours of TV news.
+These applications achieve near-expert performance on a single machine and scale efficiently to hundreds of machines,
+enabling formerly long-running big video data analysis tasks to be carried out in minutes to hours.
 
-[Download Paper]() (12 MB)
+## Paper
 
-Shader components were implemented as an extension of the [Spire shading language](). You may also wish to see our SIGGRAPH [2016 paper]() on Spire.
+[Download Paper]() (XX MB)
 
-# Code
+## Code
 
-[Code on Github]()
+[Code on Github](https://github.com/scanner-research/scanner/)

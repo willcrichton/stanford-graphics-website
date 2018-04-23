@@ -24,6 +24,17 @@
             }
 
             .paper {
+                img {
+                    float: left;
+                    width: 100px;
+                }
+
+                .paperinfo {
+                    float: left;
+                    margin-left: 15px;
+                    vertical-align: middle;
+                }
+
                 .title {
                     font-weight: bold;
                 }

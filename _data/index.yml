@@ -3,6 +3,7 @@ publications:
     papers:
       - title: "Scanner: Efficient Video Analysis at Scale"
         link: /publications/scanner
+        image: /assets/images/publications/scanner/banner-small.jpg
         authors: Alex Poms, Will Crichton, Pat Hanrahan, Kayvon Fatahalian
 
 news:

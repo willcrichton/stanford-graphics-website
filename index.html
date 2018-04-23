@@ -39,8 +39,12 @@ id: index
         <div class="papers">
           {% for paper in conf.papers %}
           <div class="paper">
-            <div class="title"><a href="{{ paper.link | relative_url }}">{{ paper.title }}</a></div>
-            <div class="authors">{{ paper.authors }}</div>
+            <img src="{{ paper.image | relative_url }}" />
+            <div class="paperinfo">
+              <div class="title"><a href="{{ paper.link | relative_url }}">{{ paper.title }}</a></div>
+              <div class="authors">{{ paper.authors }}</div>
+            </div>
+            <div class="clearfix" />
           </div>
           {% endfor %}
         </div>
