@@ -2,10 +2,10 @@
 layout: publication
 title: "Scanner: Efficient Video Analysis at Scale"
 authors:
-    - <a href="http://www.cs.cmu.edu/~apoms/">Alex Poms</a>, CMU
-    - <a href="http://willcrichton.net">Will Crichton</a>, Stanford
-    - Pat Hanrahan, Stanford
-    - <a href="http://graphics.stanford.edu/~kayvonf/">Kayvon Fatahalian</a>, Stanford
+    - "[Alex Poms](http://www.cs.cmu.edu/~apoms/) CMU"
+    - "[Will Crichton](http://willcrichton.net), Stanford"
+    - "Pat Hanrahan, Stanford"
+    - "[Kayvon Fatahalian](http://graphics.stanford.edu/~kayvonf/), Stanford"
 venue: |
     ACM Transactions on Graphics, 36(4), Aug 2018
     Proceedings of ACM SIGGRAPH 2018

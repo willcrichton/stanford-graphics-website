@@ -10,7 +10,7 @@ id: index
       <h2>News</h2>
       <ul>
         {% for bullet in site.data.index.news %}
-        <li><span>{{ bullet }}</span></li>
+        <li><span>{{ bullet | markdownify }}</span></li>
         {% endfor %}
       </ul>
     </div>
