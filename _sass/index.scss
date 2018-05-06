@@ -38,6 +38,17 @@
                 .title {
                     font-weight: bold;
                 }
+
+                @media #{$media-phone} {
+                    img {
+                        display: none;
+                    }
+
+                    .paperinfo {
+                        float: none;
+                        margin: 0;
+                    }
+                }
             }
         }
     }

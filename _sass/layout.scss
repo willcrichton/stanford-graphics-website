@@ -3,78 +3,86 @@
 body {
     font-family: $default-family;
     font-size: 18px;
-    background: white;
+    background: $fog;
     line-height: 1.3;
+    color: $black;
 }
 
 .container {
-    min-height: 100vh;
-    padding: 1px 20px;
+    max-width: 1152px;
+    width: auto;
 }
 
-nav {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+.container.main {
+    min-height: 100vh;
+    //padding: 1px 20px;
 
-    div.logo {
-        font-family: $header-family;
-        font-size: 40px;
-        text-transform: uppercase;
-        float: left;
+    nav {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
 
-        @media #{$media-phone} {
-            float: none;
-            text-align: center;
-            font-size: 28px;
-        }
+        div.logo {
+            float: left;
 
-        a {
-            color: black;
-            border: none;
-
-            &:hover {
-                color: black;
+            @media #{$media-phone} {
+                float: none;
+                text-align: center;
+                font-size: 28px;
             }
-        }
-    }
-
-    ul.navlinks {
-        float: right;
-        list-style: none;
-        margin: 0;
-
-        @media #{$media-phone} {
-            float: none;
-            text-align: center;
-        }
-
-        li {
-            display: inline-block;
 
             a {
-                font-family: $header-family;
-                font-size: 20px;
-                letter-spacing: 0.5px;
-                display: inline-block;
-                margin-top: 8px;
-                margin-left: 10px;
-                vertical-align: middle;
-                background-color: grey(60);
-                padding: 3px 8px;
-                border-radius: 2px;
-                text-decoration: none;
-                color: grey(250);
                 border: none;
 
-                &:hover {
-                    color: white;
-                    background-color: grey(20);
+                img {
+                    height: 70px;
+                }
+            }
+        }
+
+        ul.navlinks {
+            float: right;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            @media #{$media-phone} {
+                float: none;
+                text-align: center;
+            }
+
+            li {
+                display: inline-block;
+
+                a {
+                    font-family: $header-family;
+                    font-size: 20px;
+                    font-weight: bolder;
+                    letter-spacing: 0.5px;
+                    display: inline-block;
+                    margin-top: 8px;
+                    margin-left: 10px;
+                    vertical-align: middle;
+                    background-color: $dark-red;
+                    padding: 3px 8px;
+                    border-radius: 2px;
+                    text-decoration: none;
+                    color: $fog;
+                    border: none;
+
+                    &:hover {
+                        color: $white;
+                        background-color: $bright-red;
+                    }
+
+                    @media #{$media-phone} {
+                        margin-top: 5px;
+                    }
+
                 }
 
-                @media #{$media-phone} {
-                    margin-top: 5px;
+                &:first-child a {
+                    margin-left: 0;
                 }
-
             }
         }
     }

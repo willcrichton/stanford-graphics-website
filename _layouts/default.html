@@ -2,11 +2,26 @@
 <html lang="en">
   {%- include head.html -%}
   <body>
-    <div class="container">
-      {%- include nav.html -%}
-      <div class="content">
-        {{ content }}
-      </div>
-    </div>
+    <div id="su-wrap"> <!-- #su-wrap start -->
+      <div id="su-content"> <!-- #su-content start -->
+        <!-- Brandbar snippet start -->
+        <div id="brandbar">
+          <div class="container">
+            <a href="http://www.stanford.edu">
+              <img src="https://www-media.stanford.edu/su-identity/images/brandbar-stanford-logo@2x.png" alt="Stanford University" width="152" height="23">
+            </a>
+          </div> <!-- .container end -->
+        </div> <!-- #brandbar end -->
+        <!-- Brandbar snippet end -->
+
+        <div class="container main">
+          {%- include nav.html -%}
+          <div class="content">
+            {{ content }}
+          </div>
+        </div>
+      </div> <!-- #su-content end -->
+    </div> <!-- #su-wrap end -->
+    {%- include footer.html -%}
   </body>
 </html>

@@ -1,0 +1,27 @@
+quarters: ["Autumn", "Winter", "Spring"]
+
+courses:
+  - name: CS 48N - The Science of Art
+    link: cs48n
+    summary: >-
+      The interwoven histories of science and Western art from the Renaissance to the 19th century. Emphasis is on the revolutions in science and mathematics that have inspired parallel revolutions in the visual arts (e.g., Brunelleschi's invention of linear perspective, Newton's discoveries in geometric optics, and the theories of color vision proposed by Goethe, Young, Helmholtz, etc.). The scientific principles behind image making, including a brief survey of digital image synthesis (a.k.a. computer graphics). However, this is not a course in computer graphics. No programming experience is required. Intended primarily for freshmen and sophmores, with preference given to freshmen. Enrollment limited. Satisfies GER:DB-EngrAppSci.
+    units: 3
+    prerequisites: None
+    instructor: Marc Levoy
+    televised: No
+    next_offering: 2013 or 2014
+    past_offerings:
+      - "[Winter, 1998](/cs99d-98)"
+
+  - name: CS 148 - Introductory Computer Graphics
+    link: cs148
+    summary: >-
+      Image input and output devices such as cameras and displays, graphics hardware and software, input technologies and interactive techniques, typography and page layout, light and color representations, exposure and tone reproduction, image composition and imaging models, digital signal processing, sampling, aliasing and antialiasing, compression, two- and three-dimensional geometry and transformations, modeling techniques including curves and surfaces, reflection models and illumination algorithms, and basic methods of animation. Programming assignments using C++ and OpenGL. GER:DB-EngrAppSci
+    units: 3
+    prerequisites: CS 107 and Math 51
+    instructor: Pat Hanrahan
+    televised: No
+    quarter: Autumn
+    time: Tue/Thu 2:15-3:30pm in Braun Aud
+    past_offerings:
+      - "[Summer, 2000](http://cse.stanford.edu/class/cs148/) (Johnson)"
