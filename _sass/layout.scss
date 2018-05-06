@@ -14,7 +14,7 @@ body {
 }
 
 .container.main {
-    min-height: 100vh;
+    min-height: calc(100vh - 140px - 30px - 22px);
     //padding: 1px 20px;
 
     nav {
